@@ -1,23 +1,23 @@
-import { Seo } from "@/ui/components/seo/seo";
-import { Typography } from "@/ui/design-system/typography/typography";
-import { Button } from "@/ui/design-system/button/button";
-import { RiFacebookFill } from "react-icons/ri"; // importation de l'icon Facebook de la lib remix icon
-import { IoIosArrowForward } from "react-icons/io"; // importation de l'icon arrow de la lib remix icon
-import head from "next/head";
-import React, { Component } from "react";
-import { Spinner } from "@/ui/design-system/spinner/spinner";
-import { Logo } from "@/ui/design-system/logo/logo";
-import { Avatar } from "@/ui/design-system/avatar/avatar";
-import { Container } from "@/ui/components/container/container";
-import { Navigation } from "@/ui/components/navigation/navigation";
-import type { InferGetStaticPropsType, GetStaticProps } from 'next'
+// COMPNENT
+import { Container } from "@/ui/components/container/container"
+import { Navigation } from "@/ui/components/navigation/navigation"
+import { Seo } from "@/ui/components/seo/seo"
 
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+// DESIGN SYSTEM
+import { Avatar } from "@/ui/design-system/avatar/avatar"
+import { Button } from "@/ui/design-system/button/button"
+import { Logo } from "@/ui/design-system/logo/logo"
+import { Spinner } from "@/ui/design-system/spinner/spinner"
+import { Typography } from "@/ui/design-system/typography/typography"
 
-export default function Home() {
-  return (
-    
-    <>
+//ICO
+import { IoIosArrowForward } from "react-icons/io"
+import { RiFacebookFill } from "react-icons/ri"
+
+export default function DesignSystem() {
+    return(
+
+        <>
         <Seo title="Application test" description="description..."/>
 
     {/*Navigation (Menu)*/}
@@ -196,7 +196,6 @@ export default function Home() {
   </div>
   </div>
     </Container>
-
-   </>
-  );
+    </>
+    )
 }
