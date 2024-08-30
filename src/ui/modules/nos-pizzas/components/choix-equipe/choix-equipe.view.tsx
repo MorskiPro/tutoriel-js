@@ -6,6 +6,7 @@ import { Container } from "@/ui/components/container/container";
 import { Button } from "@/ui/design-system/button/button";
 
 interface ChoixEquipeInterface {
+    id: string,
     imagePath: string;
     imageAlt: string,
     title: string,
@@ -20,6 +21,7 @@ interface ChoixEquipeInterface {
 
 const ChoixEquipeData: ChoixEquipeInterface[] = [
     {
+        id: uuidv4(),
         imagePath: "/assets/images/campagnarde.png",
         imageAlt: "",
         title: "LA CAMPAGNARDE",
@@ -31,7 +33,7 @@ const ChoixEquipeData: ChoixEquipeInterface[] = [
         pricel: "12,50", // Exemple de prix pour la taille L
         pricexl: "14", // Exemple de prix pour la taille XL
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Burger.png",
         imageAlt: "",
         title: "LA BURGER",
@@ -43,7 +45,7 @@ const ChoixEquipeData: ChoixEquipeInterface[] = [
         pricel: "12,50", // Exemple de prix pour la taille L
         pricexl: "14", // Exemple de prix pour la taille XL
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/abeille.png",
         imageAlt: "",
         title: "L'ABEILLE",
@@ -55,7 +57,7 @@ const ChoixEquipeData: ChoixEquipeInterface[] = [
         pricel: "12,50", // Exemple de prix pour la taille L
         pricexl: "14", // Exemple de prix pour la taille XL
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/poitevine.png",
         imageAlt: "",
         title: "LA POITEVINE",
@@ -81,7 +83,7 @@ export const ChoixEquipeView = () => {
                       ChoixEquipe.pricexl; // Default to XL
 
         return (
-            <div key={uuidv4()} className="flex flex-col items-center justify-center bg-white rounded p-3">
+            <div key={ChoixEquipe.id} className="flex flex-col items-center justify-center bg-white rounded p-3">
                 <div className="relative w-[130px] h-[130px] rounded-full mb-2 p-10 overflow-hidden"> 
                     <Image fill src={ChoixEquipe.imagePath} alt={ChoixEquipe.imageAlt} className="object-scale-down blur-xl" />
                     <Image fill src={ChoixEquipe.imagePath} alt={ChoixEquipe.imageAlt} className="object-scale-down" />

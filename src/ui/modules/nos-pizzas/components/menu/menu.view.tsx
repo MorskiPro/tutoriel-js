@@ -6,6 +6,7 @@ import { Button } from "@/ui/design-system/button/button";
 import { useState } from "react";
 
 interface MenuListInterface {
+
     imagePath: string;
     imageAlt: string;
     title: string;
@@ -17,11 +18,14 @@ interface MenuListInterface {
 
     base: string,
 
+    id: string,
+
 }
 
         // Creation d'une interface tableau nous permettant d'aller chercher les informations pour les cases
 const MenuData: MenuListInterface[] = [
     {
+        id: uuidv4(),
         imagePath: "/assets/images/Magherita.png",
         imageAlt: "drapeau de l'italie",
         title: "La Margherita",
@@ -34,6 +38,7 @@ const MenuData: MenuListInterface[] = [
         base: "tomate",
     },
     {
+        id: uuidv4(),
         imagePath: "/assets/images/Reine.png",
         imageAlt: "Une piece de viande pour la pizza",
         title: "La Reine",
@@ -46,6 +51,7 @@ const MenuData: MenuListInterface[] = [
         base: "tomate",
     },
     {
+        id: uuidv4(),
         imagePath: "/assets/images/Chorizo.png",
         imageAlt: "Un poisson pour la pizza",
         title: "La Chorizo",
@@ -58,6 +64,7 @@ const MenuData: MenuListInterface[] = [
         base: "tomate",
     },
     {
+        id: uuidv4(),
         imagePath: "/assets/images/Royale.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Royale",
@@ -70,6 +77,7 @@ const MenuData: MenuListInterface[] = [
         base: "tomate",
     },
     {
+        id: uuidv4(),
         imagePath: "/assets/images/Oceane.png",
         imageAlt: "Des legumes pour la pizza",
         title: "L'Oceane",
@@ -82,6 +90,7 @@ const MenuData: MenuListInterface[] = [
         base: "tomate",
     },
     {
+        id: uuidv4(),
         imagePath: "/assets/images/Forestiere.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Forestière",
@@ -94,6 +103,7 @@ const MenuData: MenuListInterface[] = [
         base: "tomate",
     },
     {
+        id: uuidv4(),
         imagePath: "/assets/images/Fromagere.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Fromagère",
@@ -107,6 +117,7 @@ const MenuData: MenuListInterface[] = [
         base: "tomate",
     },
     {
+        id: uuidv4(),
         imagePath: "/assets/images/Napolitaine.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Napolitaine",
@@ -119,6 +130,7 @@ const MenuData: MenuListInterface[] = [
         base: "tomate",
     },
     {
+        id: uuidv4(),
         imagePath: "/assets/images/Speciale.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Speciale",
@@ -131,6 +143,7 @@ const MenuData: MenuListInterface[] = [
         base: "tomate",
     },
     {
+        id: uuidv4(),
         imagePath: "/assets/images/Regionale.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Regionale",
@@ -143,6 +156,7 @@ const MenuData: MenuListInterface[] = [
         base: "tomate",
     },
     {
+        id: uuidv4(),
         imagePath: "/assets/images/Paysanne.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Paysanne",
@@ -154,7 +168,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "tomate",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Gorgonzola.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Gorgonzola",
@@ -166,7 +180,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "tomate",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Artichauthon.png",
         imageAlt: "Des legumes pour la pizza",
         title: "L'Artichauthon",
@@ -178,7 +192,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "tomate",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Orientale.png",
         imageAlt: "Des legumes pour la pizza",
         title: "L'Orientale",
@@ -190,7 +204,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "tomate",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Poitevine.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Poitevine",
@@ -202,7 +216,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "tomate",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Maroilles.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Maroilles",
@@ -214,7 +228,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "tomate",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Champizo.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Champizo",
@@ -226,7 +240,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "tomate",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Trois-Fromages.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Trois Fromages",
@@ -238,7 +252,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "tomate",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Saumon.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Saumon",
@@ -250,7 +264,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "tomate",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Normande.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Normande",
@@ -262,7 +276,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "tomate",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Champithon.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Champithon",
@@ -274,7 +288,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "tomate",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Quatre-Fromages.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Quatre Fromages",
@@ -286,7 +300,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "tomate",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/4-Saisons.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La 4 Saisons",
@@ -298,7 +312,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "tomate",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Du-Pizzaïole.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Pizzaïole",
@@ -310,7 +324,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "tomate",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Reblochonne.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Reblochonne",
@@ -322,7 +336,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "tomate",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Campagnarde.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Campagnarde",
@@ -334,7 +348,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "tomate",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Bolognaise.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Bolognaise",
@@ -346,7 +360,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "tomate",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Magret.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Magret",
@@ -358,7 +372,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "tomate",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Végétarienne.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Végétarienne",
@@ -370,7 +384,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "tomate",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/CHTI.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La CH'TI",
@@ -382,7 +396,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "tomate",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Raclette.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Raclette",
@@ -394,7 +408,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "tomate",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Guemenoise.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Guemenoise",
@@ -406,7 +420,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "tomate",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Blanc-Bec.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Blanc Bec",
@@ -418,7 +432,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "tomate",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Force-7.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Force 7",
@@ -430,7 +444,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "tomate",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Texane.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Texane",
@@ -442,7 +456,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "tomate",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Barbecue.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Barbecue",
@@ -454,7 +468,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "tomate",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Burger.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Burger",
@@ -466,7 +480,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "tomate",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Popeye.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Popeye",
@@ -478,7 +492,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "tomate",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Calzone.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Calzone",
@@ -493,7 +507,7 @@ const MenuData: MenuListInterface[] = [
 
     //BASE CREME
 
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Flambée.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Flambée",
@@ -505,7 +519,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "creme",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Flambée-Chèvre.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Flambée Chèvre",
@@ -517,7 +531,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "creme",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Flambée-Saumon.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Flambée Saumon",
@@ -529,7 +543,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "creme",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Flambée-Anchois.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Flambée Anchois",
@@ -541,7 +555,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "creme",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Tartiflette.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Tartiflette",
@@ -553,7 +567,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "creme",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Kébab.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Kébab",
@@ -565,7 +579,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "creme",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Provençale.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Provençale",
@@ -577,7 +591,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "creme",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Haway.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Haway",
@@ -589,7 +603,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "creme",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Littoral.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Littoral",
@@ -601,7 +615,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "creme",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Fred.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Fred",
@@ -613,7 +627,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "creme",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Abeille.png",
         imageAlt: "Des legumes pour la pizza",
         title: "L'Abeille",
@@ -625,7 +639,7 @@ const MenuData: MenuListInterface[] = [
 
         base: "creme",
     },
-    {
+    {id: uuidv4(),
         imagePath: "/assets/images/Dijonnaise.png",
         imageAlt: "Des legumes pour la pizza",
         title: "La Dijonnaise",
@@ -656,7 +670,7 @@ export const MenuView = () => {
     };
 
     const MenuList =pizzasToDisplay.map ((Menu) => (
-        <div key={uuidv4()} className="flex flex-col items-center">
+        <div key={Menu.id} className="flex flex-col items-center">
             <div className="flex justify-center items-center gap-4 pb-2"> 
             <Image src={Menu.imagePath} alt="logo pour pizza au feu de bois 79" width={45} height={45}/>
             <Typography variant="caption3">{Menu.title}</Typography>
