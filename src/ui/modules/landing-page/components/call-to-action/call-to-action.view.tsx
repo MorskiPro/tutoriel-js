@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Button } from "@/ui/design-system/button/button";
 import Link from "next/link";
 
+// Définition de l'interface pour les éléments de CTA
 interface CTAListInterface{
     imagePath: string,
     imageAlt: string,
@@ -15,14 +16,14 @@ interface CTAListInterface{
  // Creation d'une interface tableau nous permettant d'aller chercher les informations pour les cases
  const CTAData: CTAListInterface[] = [
     {
-        id: 1,
+        id: 123,
         imagePath: "/assets/images/svg/Facebook.svg",
         imageAlt: "Like Facebook",
         title: "Rejoins-nous sur Facebook",
         lien: "https://www.facebook.com/p/Label-Pizza-79-100077369687935/?wtsid=rdr_084I3QsGLQ3kGYial&_rdr",
     },
     {
-        id: 2,
+        id: 234,
         imagePath: "/assets/images/svg/google.svg",
         imageAlt: "Avis Google",
         title: "Laissez un avis sur Google",
@@ -34,8 +35,9 @@ interface CTAListInterface{
 export const CTAView = () => {
 
     const CTAList = CTAData.map((CTA) => (
+     
         // Creation d'une case pour boucler sur les 3 autres elements
-    <div className="pt-5" key={CTA.id}>
+    <div key={CTA.id} className="pt-5" >
         <div  className="flex flex-col sm:w-[200px] sm:h-[250px] items-center justify-center bg-secondary-100 rounded p-3">
         {/* On demande a la boucle d'aller chercher le titre pour chaque case */}
 
@@ -48,6 +50,7 @@ export const CTAView = () => {
 
                 {/* Image en blur pour faire le fond */}
                 <a href={CTA.lien} target="_blank"> <Image fill src={CTA.imagePath} alt={CTA.imageAlt} className="object-scale-down"/> </a>
+                
             </div>    
         </div>
     </div>
