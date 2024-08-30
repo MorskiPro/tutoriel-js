@@ -48,7 +48,7 @@ const ChoixEquipeData: ChoixEquipeInterface[] = [
     {id: uuidv4(),
         imagePath: "/assets/images/abeille.png",
         imageAlt: "",
-        title: "L'ABEILLE",
+        title: "L\'ABEILLE",
         description: "Crème Fraîche, Jambon, Lardons, Oignons, Chèvre, Fromage, Miel",
         tailles: "S",
         taillel: "L",

@@ -10,16 +10,19 @@ interface CTAListInterface{
     imageAlt: string,
     title: string,
     lien: string,
+    id: number,
 }
  // Creation d'une interface tableau nous permettant d'aller chercher les informations pour les cases
  const CTAData: CTAListInterface[] = [
     {
+        id: 1,
         imagePath: "/assets/images/svg/Facebook.svg",
         imageAlt: "Like Facebook",
         title: "Rejoins-nous sur Facebook",
         lien: "https://www.facebook.com/p/Label-Pizza-79-100077369687935/?wtsid=rdr_084I3QsGLQ3kGYial&_rdr",
     },
     {
+        id: 2,
         imagePath: "/assets/images/svg/google.svg",
         imageAlt: "Avis Google",
         title: "Laissez un avis sur Google",
@@ -33,7 +36,7 @@ export const CTAView = () => {
     const CTAList = CTAData.map((CTA) => (
         // Creation d'une case pour boucler sur les 3 autres elements
     <div className="pt-5">
-        <div key={uuidv4()} className="flex flex-col sm:w-[200px] sm:h-[250px] items-center justify-center bg-secondary-100 rounded p-3">
+        <div key={CTA.id} className="flex flex-col sm:w-[200px] sm:h-[250px] items-center justify-center bg-secondary-100 rounded p-3">
         {/* On demande a la boucle d'aller chercher le titre pour chaque case */}
 
             <Typography variant="caption3" component="h3" weight="medium" className="text-center">

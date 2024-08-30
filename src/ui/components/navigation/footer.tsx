@@ -6,8 +6,6 @@ import { Button } from "@/ui/design-system/button/button";
 import { RiFacebookFill } from "react-icons/ri";
 import { RiInstagramFill } from "react-icons/ri";
 import { footerApplicationList } from "./app-links";
-import {v4 as uuidv4} from 'uuid';
-import { Children, useMemo } from "react";
 import { ActiveLinks } from "./active-link";
 
 export const Footer = () => {
@@ -54,9 +52,9 @@ export const Footer = () => {
 
 const FooterLink =() => {
     const linksList = footerApplicationList.map((link)=> (
-        <div key={uuidv4()}>
+        <div>
             {link.type === "internal" && (
-            <ActiveLinks key={uuidv4()} href={link.baseUrl}>{link.label}</ActiveLinks> 
+            <ActiveLinks key={link.label} href={link.baseUrl}>{link.label}</ActiveLinks> 
             )}
 
             {link.type === "external" && (
