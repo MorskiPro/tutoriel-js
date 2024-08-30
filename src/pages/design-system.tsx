@@ -1,5 +1,6 @@
 // COMPNENT
 import { Container } from "@/ui/components/container/container"
+import { Layout } from "@/ui/components/layout/layout"
 import { Navigation } from "@/ui/components/navigation/navigation"
 import { Seo } from "@/ui/components/seo/seo"
 
@@ -20,37 +21,37 @@ export default function DesignSystem() {
         <>
         <Seo title="Application test" description="description..."/>
 
-    {/*Navigation (Menu)*/}
-    <Navigation/>
-    
-    <Container className="space-y-5">
-    {/*Typographie*/}
-    <div className="space-y-2">
-      <Typography variant="caption4" weight="medium">
-        Typographie
-      </Typography>
+      <Layout>
+        <Container className="space-y-5">
+          {/*Typographie*/}
+            <div className="space-y-2">
+              <Typography variant="caption4" weight="medium">
+                Typographie
+              </Typography>
+            </div>
 
-      <div className="flex flex-col gap-2 p-5 border-gray-300 divide-y-2 divide-gray-300 rounded">
-        <div className="pb-5 space-y-2">
-          <Typography variant="caption2" weight="medium">
-            Display
-          </Typography>
-          <Typography variant= "display">Des pizzas cuites au feu de bois</Typography>
-        </div>
+            <div className="flex flex-col gap-2 p-5 border-gray-300 divide-y-2 divide-gray-300 rounded">
+              <div className="pb-5 space-y-2">
+                <Typography variant="caption2" weight="medium">
+                  Display
+                </Typography>
+                <Typography variant= "display">Des pizzas cuites au feu de bois</Typography>
+              </div>
+            </div>
+ 
+            <div className="pb-5 space-y-2"> 
+              <Typography variant="caption2" weight="medium">
+                H1
+              </Typography>
+              <Typography variant= "h1">Un vaste choix de recette et de taille pour toutes les papilles</Typography>
+            </div>
 
-        <div className="pb-5 space-y-2"> 
-          <Typography variant="caption2" weight="medium">
-            H1
-          </Typography>
-          <Typography variant= "h1">Un vaste choix de recette et de taille pour toutes les papilles</Typography>
-        </div>
-
-        <div className="pb-5 space-y-2">
-          <Typography variant="caption2" weight="medium">
-            H2
-          </Typography>
-          <Typography variant= "h2">Le choix de l’équipe</Typography>
-        </div>
+            <div className="pb-5 space-y-2">
+              <Typography variant="caption2" weight="medium">
+                H2
+              </Typography>
+              <Typography variant= "h2">Le choix de l’équipe</Typography>
+            </div>
 
         <div className="pb-5 space-y-2">
           <Typography variant="caption2" weight="medium">
@@ -94,8 +95,7 @@ export default function DesignSystem() {
           </Typography>
           <Typography variant= "caption4">Label Pizza</Typography>
         </div>
-      </div>
-    </div>
+     
     {/* Spinners */}
     <div className="space-y-2">
       <Typography variant="caption4" weight="medium">
@@ -195,7 +195,11 @@ export default function DesignSystem() {
   </div>
   </div>
   </div>
+ 
     </Container>
+    </Layout>
+    
+
     </>
     )
 }

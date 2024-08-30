@@ -1,6 +1,7 @@
 import { iconProps } from "@/types/iconProps";
 import clsx from "clsx";
 import { Spinner } from "../spinner/spinner";
+import React from "react";
 
 interface Props {
     size?: "small" | "medium" | "large"; //taille du bouton
@@ -11,9 +12,11 @@ interface Props {
     disabled?: boolean; //check disable
     isLoading?: boolean; //check loading
     children?: React.ReactNode;
+    onClick?:()=>void;
+    className?: string,
 }
 
-export const Button = ({size="medium", variant="accent", icon, iconTheme="accent", iconPosition="right", disabled, isLoading, children}: Props) => {
+export const Button = ({size="medium", variant="accent", icon, iconTheme="accent", iconPosition="right", disabled, isLoading, children, onClick}: Props) => {
 
     let variantStyles: string = "", sizeStyles: string ="", icoSize: number=0;
 
@@ -48,7 +51,7 @@ export const Button = ({size="medium", variant="accent", icon, iconTheme="accent
             }
             break;
     }
-
+    
     switch (size) {
         case "small":
                 sizeStyles = `text-caption1 font-medium ${variant === 'ico' ? "flex items-center justify-center w-[40px] h-[40px]" : "px-[14px] py-[12px]"}`; //si c'est un icon alors ne pas gerer le padding mais le w et h
@@ -67,8 +70,9 @@ export const Button = ({size="medium", variant="accent", icon, iconTheme="accent
     }
 
 
+
     return <>
-        <button type="button" className={clsx(variantStyles, sizeStyles, icoSize, isLoading && "cursor-wait", "relative")} onClick={()=>console.log('click')} disabled={disabled}> 
+        <button type="button" className={clsx(variantStyles, sizeStyles, icoSize, isLoading && "cursor-wait", "relative")} onClick={onClick} disabled={disabled}> 
            {isLoading && (
             <div className="absolute inset-0 flex items-center justify-center"> {/* aligner le loading au milieu du bouton*/}
                 {

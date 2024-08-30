@@ -1,7 +1,7 @@
 import clsx from "clsx";
 
 interface Props {
-    variant?: "display" | "h1" | "h2" | "h3" | "h4" | "lead" | "body-lg" | "body-base" | "body-sm" | "caption1" | "caption2" | "caption3" | "caption4";
+    variant?: "display" | "h1" | "h2" | "h3" | "h4" | "lead" | "body-lg" | "body-base" | "body-sm" | "light" | "caption1" | "caption2" | "caption3" | "caption4";
     component?: "h1" | "h2" | "h3" | "h4" | "div" | "p" | "span";
     theme?: "black" | "gray" | "primary" | "white" | "secondary"; //Couleur de la typo
     weight?: "regular" | "medium" | "bold" | "thin" | "extra-bold";
@@ -36,6 +36,10 @@ export const Typography = ({variant = "h2", component: Component = "div", theme 
 
         case "body-sm": 
         variantStyles = "text-sm";
+            break;
+
+        case "light":
+            variantStyles = "text-light";
             break;
         
         case "caption1": 

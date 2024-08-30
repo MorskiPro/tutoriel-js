@@ -1,5 +1,6 @@
 interface Props{
     size?: "very-small" | "small" | "medium" | "large"
+    className?: string;
 }
 
 export const Logo = ({size="medium"}: Props) => {

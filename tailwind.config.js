@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+    plugins: [require('tailwind-hamburgers')],
     content: [
       "./src/**/*.{js,ts,jsx,tsx,mdx}",
     ],
@@ -68,6 +69,13 @@ module.exports = {
         letterSpacing: '-0.7px',
         fontWeight: '400',
       }],
+
+      light: ["12px", {
+        lineHeight: '20px',
+        letterSpacing: '-0.3px',
+        fontWeight: '500',
+      }],
+
       caption1: ["16px", {
         lineHeight: '18px',
         letterSpacing: '-0.5px',
