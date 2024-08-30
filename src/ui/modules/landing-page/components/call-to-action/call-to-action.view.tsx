@@ -35,8 +35,8 @@ export const CTAView = () => {
 
     const CTAList = CTAData.map((CTA) => (
         // Creation d'une case pour boucler sur les 3 autres elements
-    <div className="pt-5">
-        <div key={CTA.id} className="flex flex-col sm:w-[200px] sm:h-[250px] items-center justify-center bg-secondary-100 rounded p-3">
+    <div className="pt-5" key={CTA.id}>
+        <div  className="flex flex-col sm:w-[200px] sm:h-[250px] items-center justify-center bg-secondary-100 rounded p-3">
         {/* On demande a la boucle d'aller chercher le titre pour chaque case */}
 
             <Typography variant="caption3" component="h3" weight="medium" className="text-center">
