@@ -28,11 +28,11 @@ export const Navigation=({}:Props)=> {
 
                 <div className="flex max-sm:hidden items-center gap-7">
                     <Typography variant="body-sm" component="div" className="flex items-center gap-7 text-nowrap">
-                        <ActiveLinks href="/design-system">Qui sommes-nous ?</ActiveLinks>
+                        <ActiveLinks href="/qui-sommes-nous">Qui sommes-nous ?</ActiveLinks>
                         <ActiveLinks href="/nos-pizzas">Nos pizzas</ActiveLinks>
                         <ActiveLinks href="/nos-horaires">Nos Horaires</ActiveLinks>
                     </Typography>     
-                    <Link href="/contact">    
+                    <Link href="/nos-horaires">    
                     <Button variant="secondary" size="small">
                         Commander
                     </Button>

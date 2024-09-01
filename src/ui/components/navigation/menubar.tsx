@@ -27,7 +27,7 @@ return(
             
 
         <div className="flex justify-center py-1.5">
-            <ActiveLinks href="/nos-pizzas">
+            <ActiveLinks href="/qui-sommes-nous">
                 <Button variant="ico" iconTheme="gray" icon={{icon: RiTruckFill}}size="medium"/>
             </ActiveLinks>
         </div>
@@ -39,7 +39,9 @@ return(
         </div>
 
         <div className="flex justify-center py-1.5">
+            <ActiveLinks href="/nos-horaires">
             <Button variant="ico" iconTheme="gray" icon={{icon: RiCalendarFill}}size="medium"/>
+            </ActiveLinks>
         </div>
     
         <div className="flex justify-center py-1.5">

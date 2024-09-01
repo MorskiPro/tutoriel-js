@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Typography } from "@/ui/design-system/typography/typography";
 import { Container } from "@/ui/components/container/container";
 import { Button } from "@/ui/design-system/button/button";
-import { RiCarFill } from "react-icons/ri";
+import { RiCarFill, RiFacebookFill } from "react-icons/ri";
 
 
 interface MapHorairesInterface {
@@ -79,9 +79,15 @@ export const MapHorairesView = () => {
     return(
         <div className="bg-gray-100 drop-shadow-xl">
             <Container className="">
-                <Typography className="pt-10" variant="h2">Prise de commande à partir de 17h30</Typography>
+                <Typography className="pt-10 text-center sm:text-left" variant="caption4">Nos horaires de passage</Typography>
                 <div className="sm:pt-0 pt-14">
-                    <div className="grid sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 grid-cols-2 gap-5 sm:py-10">{MapHorairesList}</div>
+                    <div className="grid sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 grid-cols-2 gap-5 sm:py-10 drop-shadow-sm">{MapHorairesList}</div>
+                </div>
+                <div>
+                    <Typography variant="caption3" className="sm:pt-3 pt-10 px-10 pb-5 text-center">Suivez nous sur Facebook pour ne rater aucune modification d’horaires</Typography>
+                    <div className="flex justify-center items-center pb-10">
+                    <Button size="small" variant="ico" iconTheme="gray" icon={{icon: RiFacebookFill }} onClick={() => window.open(`https://www.facebook.com/profile.php?id=100077369687935`, '_blank')}></Button>
+                    </div>
                 </div>
             </Container>
         </div>
