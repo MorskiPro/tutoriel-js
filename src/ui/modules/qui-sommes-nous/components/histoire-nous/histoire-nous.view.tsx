@@ -16,7 +16,7 @@ export const HistoireNous =() => {
                         Notre histore
                     </Typography>
                     <Typography variant="body-sm" className="pt-5 sm:text-left text-center sm:px-0 px-5">
-                    Fondée en 1991, notre pizzéria ambulante a célébré 31 années de passion et de créativité autour de la pizza. Depuis nos débuts, nous avons su évoluer et innover en proposant une gamme variée de 56 pizzas. Des plus classiques, telles que la pizza reine, aux plus audacieuses, comme la pizza normande, garnie de champignons et de camembert, ou la délicieuse pizza abeille, alliant chèvre et miel, chaque création est le fruit d'un savoir-faire artisanal.  
+                    Fondée en 1991, notre pizzéria ambulante a célébré 31 années de passion et de créativité autour de la pizza. Depuis nos débuts, nous avons su évoluer et innover en proposant une gamme variée de 56 pizzas. Des plus classiques, telles que la pizza reine, aux plus audacieuses, comme la pizza normande, garnie de champignons et de camembert, ou la délicieuse pizza abeille, alliant chèvre et miel, chaque création est le fruit dun savoir-faire artisanal.  
                     </Typography>
                     </div>
             </div>

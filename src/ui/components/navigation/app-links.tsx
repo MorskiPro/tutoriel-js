@@ -1,4 +1,11 @@
-import { AppLinks } from "@/types/app-link";
+
+
+interface AppLinks {
+    id: number,
+    label: string,
+    baseUrl: string,
+    type: string,
+}
 
 export const footerApplicationList: AppLinks[] = [
     {

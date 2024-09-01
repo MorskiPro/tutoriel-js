@@ -11,7 +11,7 @@ import { ActiveLinks } from "./active-link";
 export const Footer = () => {
     const currentYear = new Date().getFullYear();
     const footerNavigationList = footerApplicationList.map((element)=> (
-        <div>{element.label}</div>
+        <div key={element.id}>{element.label}</div>
     ))
 
     return (
@@ -51,18 +51,17 @@ export const Footer = () => {
 };
 
 const FooterLink =() => {
-    const linksList = footerApplicationList.map((link)=> (
-        <div>
+    const linksList = footerApplicationList.map((link) => (
+        <div key={link.id}> 
             {link.type === "internal" && (
-            <ActiveLinks key={link.id} href={link.baseUrl}>{link.label}</ActiveLinks> 
+                <ActiveLinks href={link.baseUrl}>{link.label}</ActiveLinks> 
             )}
-
             {link.type === "external" && (
-            <a href={link.baseUrl} target ="_blank">{link.label}</a>
+                <a href={link.baseUrl} target="_blank">{link.label}</a>
             )}
         </div>
     ));
-
+    
     return (
         <div className="pt-3 text-right">
             <Typography theme="white" variant="caption1" weight="medium" className="pb-2">

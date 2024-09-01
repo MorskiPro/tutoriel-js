@@ -124,7 +124,7 @@ export const ChoixEquipeView = () => {
             <Container>
                 <div>
                     <Typography variant="h2" className="sm:text-left sm:py-10 text-center pt-10">
-                        Le choix de l'équipe 
+                        Le choix de léquipe 
                     </Typography>
                 </div>
                 <div className="sm:pt-0 pt-14">

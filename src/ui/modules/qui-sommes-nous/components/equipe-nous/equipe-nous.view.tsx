@@ -53,7 +53,7 @@ export const EquipeNousView = () => {
     return (
     <div className="pt-20 pb-20">
         <Container className="">
-            <Typography variant="caption4"className="text-center pb-10">L'équipe</Typography>
+            <Typography variant="caption4"className="text-center pb-10">Léquipe</Typography>
             <div className="grid sm:grid-cols-3 grid-col-1 gap-10 p-7 sm:py-0">{EquipeNousList}</div>
         
         </Container>
