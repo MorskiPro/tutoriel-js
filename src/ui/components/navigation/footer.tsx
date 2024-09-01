@@ -54,7 +54,7 @@ const FooterLink =() => {
     const linksList = footerApplicationList.map((link)=> (
         <div>
             {link.type === "internal" && (
-            <ActiveLinks key={link.label} href={link.baseUrl}>{link.label}</ActiveLinks> 
+            <ActiveLinks key={link.id} href={link.baseUrl}>{link.label}</ActiveLinks> 
             )}
 
             {link.type === "external" && (
