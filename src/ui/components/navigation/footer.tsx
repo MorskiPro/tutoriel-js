@@ -24,7 +24,7 @@ export const Footer = () => {
                         Label Pizza
                     </Typography>
                     <Typography variant="body-sm" theme="white">
-                        Votre camion a pizza authentique dans le 79
+                        Votre camion à pizza authentique dans le 79
                     </Typography>
                     </Link>
                 </div>
@@ -42,7 +42,6 @@ export const Footer = () => {
                             <ActiveLinks href="https://www.facebook.com/profile.php?id=100077369687935">
                         <Button size="small" variant="ico" iconTheme="gray" icon={{icon: RiFacebookFill }} />
                             </ActiveLinks>
-                        <Button size="small" variant="ico" iconTheme="gray" icon={{icon: RiInstagramFill }} />
                         </div>
                     </div>
                  </Container>

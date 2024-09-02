@@ -21,8 +21,9 @@ export const HeroTopView = () => {
                 <Link href="/nos-pizzas">
                 <Button>Consulter la carte</Button>
                 </Link>
-                
-                <Button variant="outline">Decouvrez Label</Button>
+                <Link href="/qui-sommes-nous">
+                <Button variant="outline">Découvrez Label</Button>
+                </Link>
                 
             </div>
             

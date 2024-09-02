@@ -94,19 +94,19 @@ export const ChoixEquipeView = () => {
                     {ChoixEquipe.description}
                 </Typography>
                 <div className="space-x-4">
-                    <Button size="small" variant="secondary" onClick={() => {
+                    <Button size="small" variant={selectedSizes[index] === "S" ? "accent" : "outline"} onClick={() => {
                         const newSizes = [...selectedSizes]; // Créer une copie de l'état actuel
                         newSizes[index] = "S"; // Définir la taille sélectionnée pour cette pizza S
                         setSelectedSizes(newSizes); // Mettre à jour l'état
                     }}>{ChoixEquipe.tailles}</Button>
 
-                    <Button size="small" variant="secondary" onClick={() => {
+                    <Button size="small" variant={selectedSizes[index] === "L" ? "accent" : "outline"} onClick={() => {
                         const newSizes = [...selectedSizes];
                         newSizes[index] = "L"; // Définir la taille sélectionnée pour cette pizza L
                         setSelectedSizes(newSizes);
                     }}>{ChoixEquipe.taillel}</Button>
 
-                    <Button size="small" variant="secondary" onClick={() => {
+                    <Button size="small" variant={selectedSizes[index] === "XL" ? "accent" : "outline"} onClick={() => {
                         const newSizes = [...selectedSizes];
                         newSizes[index] = "XL"; // Définir la taille sélectionnée pour cette pizza XL
                         setSelectedSizes(newSizes);
@@ -124,10 +124,10 @@ export const ChoixEquipeView = () => {
             <Container>
                 <div>
                     <Typography variant="h2" className="sm:text-left sm:py-10 text-center pt-10">
-                        Le choix de léquipe 
+                        Le choix de l'équipe 
                     </Typography>
                 </div>
-                <div className="sm:pt-0 pt-14">
+                <div className="sm:pt-0 pt-5">
                     <div className="grid sm:grid-cols-4 grid-cols-2 gap-4 col-span-1 py-7 sm:py-0">{ChoixEquipeList}</div>
                 </div>
             </Container>

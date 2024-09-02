@@ -20,7 +20,7 @@ export const Navigation=({}:Props)=> {
                                 Label Pizza 
                             </Typography>
                             <Typography variant="body-sm" theme="secondary" component="span" className="">
-                                Votre camion a pizza authentique <br/> dans le 79
+                                Votre camion à pizza authentique <br/> dans le 79
                             </Typography>
                         </div>
                     </Link>

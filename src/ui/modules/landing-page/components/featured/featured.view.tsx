@@ -85,12 +85,12 @@ export const FeaturedView = () => {
                     
                     {/* Saisie des éléments qui seront situé a gauche */}
                     <Typography variant="h2" className="sm:text-right sm:py-2 text-center p-3 sm:pt-20">
-                        Un vaste choix de recette et de taille 
+                        Un vaste choix de recettes et de taille 
                         <Typography theme="primary">pour toutes les papilles</Typography>
                     </Typography>
 
                     <Typography className="sm:text-right text-center p-3 sm:py-2" variant="body-sm">
-                    Ce soir plutôt petite ou grande faim ? Plutôt poisson ou fromage ? Plus de 50 combinaisons de pizza qui ravira vos papilles.
+                    Ce soir plutôt petite ou grande faim ? Plutôt poisson ou fromage ? Plus de 50 combinaisons de pizza qui raviront vos papilles.
                     </Typography>
                     
                     <div className="flex sm:justify-end justify-center px-3 sm:py-5">

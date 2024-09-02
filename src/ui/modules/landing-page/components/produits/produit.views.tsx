@@ -42,7 +42,7 @@ export const Produit = () => {
                 </div>             
             </div>
             {/* Incrustation de l'image */} 
-            <div className="flex justify-center col-span-1 h-96">
+            <div className="flex justify-center col-span-1 h-30">
                 <div className="w-[350px] h-[350px] relative mb-10 ">
                     <Image src="/assets/images/camionpizza.png" alt="map designant les emplacements du camiom a pizza dans le 79" fill className=""/>
                 </div>
