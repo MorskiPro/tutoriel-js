@@ -33,9 +33,9 @@ export const Navigation=({}:Props)=> {
                         <ActiveLinks href="/nos-horaires">Nos Horaires</ActiveLinks>
                     </Typography>     
                     <Link href="/nos-horaires">    
-                    <Button variant="secondary" size="small">
+                    {/* <Button variant="secondary" size="small">
                         Commander
-                    </Button>
+                    </Button> */}
                     </Link> 
                 </div>
             </Container>
