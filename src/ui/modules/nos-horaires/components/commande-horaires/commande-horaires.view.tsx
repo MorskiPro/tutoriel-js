@@ -12,7 +12,7 @@ export const CommandeHoraire = () =>{
             
                     <div className="sm:col-start-2 col-span-1 drop-shadow-sm pt-2 pb-2 bg-white">
                         <div className="relative w-30 h-30 rounded-full p-8 overflow-hidden">
-                            <Image fill src="/assets/images/telephone.png" alt=""  objectFit="contain"/>
+                            <Image fill src="/assets/images/telephone.png" alt="numero de telephone pour commander les pizzas de label pizza 79"  objectFit="contain"/>
                         </div>
                             <Typography variant="caption3" className="text-center pb-1 pt-3">Yoann</Typography>
                             <Typography variant="light" theme="secondary" className="text-center">Par téléphone</Typography>

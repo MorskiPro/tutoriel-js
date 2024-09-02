@@ -27,7 +27,7 @@ const MenuData: MenuListInterface[] = [
     {
         id: uuidv4(),
         imagePath: "/assets/images/Magherita.png",
-        imageAlt: "drapeau de l'italie",
+        imageAlt: "Drapeau de l'Italie pays de la pizza",
         title: "La Margherita",
         description:"Tomate, Fromage",
 
@@ -40,7 +40,7 @@ const MenuData: MenuListInterface[] = [
     {
         id: uuidv4(),
         imagePath: "/assets/images/Reine.png",
-        imageAlt: "Une piece de viande pour la pizza",
+        imageAlt: "Une couronne, pizza reine, jambon",
         title: "La Reine",
         description:"Tomate, Jambon, Fromage",
 
@@ -53,7 +53,7 @@ const MenuData: MenuListInterface[] = [
     {
         id: uuidv4(),
         imagePath: "/assets/images/Chorizo.png",
-        imageAlt: "Un poisson pour la pizza",
+        imageAlt: "une part de pizza avec du chorizo",
         title: "La Chorizo",
         description:"Tomate, Chorizo, Fromage",
    
@@ -66,7 +66,7 @@ const MenuData: MenuListInterface[] = [
     {
         id: uuidv4(),
         imagePath: "/assets/images/Royale.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "un roi pour la royale pizza jambon champignon",
         title: "La Royale",
         description:"Tomate, Jambon, Champignons, Fromage",
       
@@ -79,7 +79,7 @@ const MenuData: MenuListInterface[] = [
     {
         id: uuidv4(),
         imagePath: "/assets/images/Oceane.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "un voilié pour une pizza de la mer moules et crevettes",
         title: "L'Oceane",
         description:"Tomate, Moules, Crevettes, Fromage, Ail, Persil",
       
@@ -92,7 +92,7 @@ const MenuData: MenuListInterface[] = [
     {
         id: uuidv4(),
         imagePath: "/assets/images/Forestiere.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "Arbre pour pizza forestiere champignons ail",
         title: "La Forestière",
         description:"Tomate, Champignons, Fromage , Ail, Crème fraîche, Persil",
       
@@ -105,7 +105,7 @@ const MenuData: MenuListInterface[] = [
     {
         id: uuidv4(),
         imagePath: "/assets/images/Fromagere.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "coeur bleu pour le bleu auvergne de la pizza",
         title: "La Fromagère",
         description:"Tomate, Bleu d'Auvergne, Fromage",
 
@@ -119,7 +119,7 @@ const MenuData: MenuListInterface[] = [
     {
         id: uuidv4(),
         imagePath: "/assets/images/Napolitaine.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "canne a peche pour pizza napolitaine avec anchois",
         title: "La Napolitaine",
         description:"Tomate, Anchois, Olives, Fromage, Persil",
       
@@ -132,7 +132,7 @@ const MenuData: MenuListInterface[] = [
     {
         id: uuidv4(),
         imagePath: "/assets/images/Speciale.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "etoile pour pizza speciale avec anchois et jambon",
         title: "La Speciale",
         description:"Tomate, Jambon, Champignons, Anchois, Câpres, Fromage, Oeuf",
       
@@ -145,7 +145,7 @@ const MenuData: MenuListInterface[] = [
     {
         id: uuidv4(),
         imagePath: "/assets/images/Regionale.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "carte pour pizza regionale lardon chevre",
         title: "La Regionale",
         description:"Tomate, Lardons, Fromage de chèvre, Fromage, Crème Fraîche",
       
@@ -158,7 +158,7 @@ const MenuData: MenuListInterface[] = [
     {
         id: uuidv4(),
         imagePath: "/assets/images/Paysanne.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "paysan pour pizza paysanne jambon et lardon",
         title: "La Paysanne",
         description:"Tomate, Jambon, Lardons, Fromage, Oeuf, Crème Fraîche",
       
@@ -170,7 +170,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Gorgonzola.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "constellation pour pizza gorgonzola",
         title: "La Gorgonzola",
         description:"Tomate, Gorgonzola, Fromage",
       
@@ -182,7 +182,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Artichauthon.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "choux pour pizza artichauthon avec thon et artichaut",
         title: "L'Artichauthon",
         description:"Tomate, Thon, Artichaut, Fromage, Crème Fraîche",
       
@@ -194,7 +194,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Orientale.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "orientale pour pizza orientale merguez et poivrons",
         title: "L'Orientale",
         description:"Tomate, Merguez, Poivrons, Olives, Fromage",
       
@@ -206,7 +206,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Poitevine.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "chevre pour pizza poitevine chevre et champignon",
         title: "La Poitevine",
         description:"Tomate, Champignons, Fromage de Chèvre, Fromage, Crème Fraîche",
       
@@ -218,7 +218,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Maroilles.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "tracteur pour pizza maroille",
         title: "La Maroilles",
         description:"Tomate, Maroilles, Fromage",
       
@@ -230,7 +230,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Champizo.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "champignon pour pizza champizo avec chorizo champignon",
         title: "La Champizo",
         description:"Tomate, Champignons, Chorizo, Fromage, Persil",
       
@@ -242,7 +242,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Trois-Fromages.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "fromage pour pizza trois fromages chevre et bleu",
         title: "La Trois Fromages",
         description:"Tomate, Chèvre, Bleu d'Auvergne, Fromage, Crème Fraîche",
       
@@ -254,7 +254,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Saumon.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "poisson pour pizza saumon",
         title: "La Saumon",
         description:"Tomate, Saumon, Fromage, Crème Fraîche, Persil",
       
@@ -266,7 +266,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Normande.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "beurre pour la pizza normande lardons camemberg",
         title: "La Normande",
         description:"Tomate, Champignons, Lardons, Oignons, Olives, Camemberg, Fromage, Crème Fraîche, Oeuf, Persil",
       
@@ -278,7 +278,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Champithon.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "hamecon pour pizza champithon thon champignon",
         title: "La Champithon",
         description:"Tomate, Champignons, Thon, Lardons, Fromage, Crème Fraîche, Persil",
       
@@ -290,7 +290,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Quatre-Fromages.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "fondu pour pizza quatre formages avec bleu et maroilles",
         title: "La Quatre Fromages",
         description:"Tomate, Chèvre, Bleu d'Auvergne, Gorgonzola ou Maroilles, Fromage",
       
@@ -302,7 +302,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/4-Saisons.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "arc en ciel pour pizza quatre saisons avec jambon artichaut",
         title: "La 4 Saisons",
         description:"Tomate, Jambon, Champignons, Artichaut, Poivrons, Fromage",
       
@@ -314,7 +314,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Du-Pizzaïole.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "pizzaiole pour pizza Pizzaïole avec chevre et lardon",
         title: "La Pizzaïole",
         description:"Tomate, Jambon, Champignons, Lardons, Chèvre ou Bleu d'Auvergne, Fromage, Crème Fraîche",
       
@@ -326,7 +326,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Reblochonne.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "montagne pour pizza reblochon avec reblochon lardon",
         title: "La Reblochonne",
         description:"Tomate, Lardons, Reblochon, Fromage",
       
@@ -338,7 +338,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Campagnarde.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "tente pour pizza campagnarde avec pomme de terre et jambon de campagne",
         title: "La Campagnarde",
         description:"Tomate, Pommes de terre, Jambon de campagne, Fromage, Crème Fraîche, Persil",
       
@@ -350,7 +350,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Bolognaise.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "pate bolognaise pour pizza bolognaise avec viande hachee et lardon",
         title: "La Bolognaise",
         description:"Tomate, Viande Hachée, Lardons, Fromage, Crème Fraîche, Oeuf",
       
@@ -362,7 +362,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Magret.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "canard pour pizza magret avec pomme de terre et magret",
         title: "La Magret",
         description:"Tomate, Pommes de Terre, Magret de canard, Fromage, Persil",
       
@@ -374,7 +374,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Végétarienne.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "plante pour pizza vegetarienne avec tomates et poivrons",
         title: "La Végétarienne",
         description:"Tomate, Champignons, Tomates Fraîches, Oignons, Olives, Poivrons, Fromage, Ail, Basilic",
       
@@ -386,7 +386,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/CHTI.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "chateau pour la pizza chti avec andouille de guemene et maroilles",
         title: "La CH'TI",
         description:"Tomate, Andouille de Guéméné, Maroilles, Fromage, Crème Fraîche",
       
@@ -398,7 +398,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Raclette.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "pomme de terre pour pizza raclette avec pomme de terre lardon et fromage",
         title: "La Raclette",
         description:"Tomate, Pommes de Terre, Jambon, Lardons, Fromage à Raclette, Fromage, Cornichons, Persil",
       
@@ -410,7 +410,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Guemenoise.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "cochon pour la pizza guemenoise avec lardon andouille de guemene",
         title: "La Guemenoise",
         description:"Tomate, Champignons, Lardons, Andouille de Guéméné, Fromage, Crème Fraîche, Persil",
       
@@ -422,7 +422,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Blanc-Bec.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "poulet pour pizza blanc bec avec poulet et lardon",
         title: "La Blanc Bec",
         description:"Tomate, Blanc de Poulet, Lardons, Fromage, Crème Fraîche, Oeuf, Persil",
       
@@ -434,7 +434,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Force-7.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "exctincteur pour la pizza force 7 avec merguez et poivrons",
         title: "La Force 7",
         description:"Tomate, Merguez, Chorizo, Oignons, Poivrons, Fromage, Curry",
       
@@ -446,7 +446,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Texane.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "cow boy pour la pizza texane avec viande hachee et chorizo",
         title: "La Texane",
         description:"Tomate, Viande Hachée, Chorizo, Poivrons, Fromage, Oeuf, Persil",
       
@@ -458,7 +458,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Barbecue.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "barbecue pour pizza barbecue avec viande hachee et poivron",
         title: "La Barbecue",
         description:"Tomate, Viande Hachée, Oignons, Pommes de Terres, Poivrons, Sauce Barbecue, Fromage",
       
@@ -470,7 +470,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Burger.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "burger pour pizza burger avec viande hachee et cheddar",
         title: "La Burger",
         description:"Tomate, Viande Hachée, Oignons, Poivrons, Cheddar, Sauce Burger, Fromage",
       
@@ -482,7 +482,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Popeye.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "trefle pour pizza popeye avec epinard et lardons",
         title: "La Popeye",
         description:"Jambon, Epinard, Lardons, Fromage, Crème Fraîche, Oeuf",
       
@@ -494,13 +494,13 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Calzone.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "chausson pour la pizza calzone avec jambon et champignon",
         title: "La Calzone",
-        description:"Tomate, Viande Hachée, Oignons, Poivrons, Cheddar, Sauce Burger, Fromage",
+        description:"Tomate, Jambon, Champignons, Fromage, Oeuf",
       
-        prices:"S: 9,50€",
+        prices:"",
         pricel:"L: 12,50€",
-        pricexl:"XL: 14€",
+        pricexl:"",
 
         base: "tomate",
     },
@@ -509,7 +509,7 @@ const MenuData: MenuListInterface[] = [
 
     {id: uuidv4(),
         imagePath: "/assets/images/Flambée.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "flamme pour la pizza flambee avec lardons et oignons",
         title: "La Flambée",
         description:"Crème Fraîche, Lardons, Oignons, Fromage, Persil",
       
@@ -521,7 +521,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Flambée-Chèvre.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "chevre pour flambee chevre avec lardon et chevre",
         title: "La Flambée Chèvre",
         description:"Crème Fraîche, Lardons, Oignons, Chèvre, Fromage, Persil",
       
@@ -533,7 +533,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Flambée-Saumon.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "poisson pour flambee saumon avec saumon et lardon",
         title: "La Flambée Saumon",
         description:"Crème Fraîche, Lardons, Oignons, Saumon, Fromage, Persil",
       
@@ -545,7 +545,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Flambée-Anchois.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "canne a peche pour flambee anchois avec anchois et lardon",
         title: "La Flambée Anchois",
         description:"Crème Fraîche, Lardons, Oignons, Anchois, Fromage, Persil",
       
@@ -557,7 +557,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Tartiflette.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "pomme de terre pour pizza tartiflette pomme de terre et reblochon",
         title: "La Tartiflette",
         description:"Crème Fraîche, Pommes de terre, Lardons, Oignons, Reblochon, Fromage, Persil",
       
@@ -569,7 +569,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Kébab.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "kebab pour pizza kebab avec blanc de poulet et sauce kebab",
         title: "La Kébab",
         description:"Crème Fraîche, Blanc de Poulet, Tomates Fraîches, Oignons, Epice Kebab, Sauce Kebab, Fromage",
       
@@ -581,7 +581,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Provençale.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "soleil pour pizza provencale lardons et tomate",
         title: "La Provençale",
         description:"Crème Fraîche, Lardons, Tomates Fraîches, Oignons, Chèvre, Fromage, Ail, Persil",
       
@@ -593,7 +593,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Haway.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "surfeur pour pizza haway avec blanc de poulet et ananas",
         title: "La Haway",
         description:"Crème Fraîche, Blanc de Poulet, Ananas, Fromage, Curry",
       
@@ -605,7 +605,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Littoral.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "vague pour pizza littoral thon et lardon",
         title: "La Littoral",
         description:"Crème Fraîche, Lardons, Thon, Oignons, Fromage, Oeuf, Persil",
       
@@ -617,7 +617,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Fred.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "guitar electrique pour pizza fred avec saumon et fromage de chevre",
         title: "La Fred",
         description:"Crème Fraîche, Saumon, Fromage de Chèvre, Fromage, Aneth, Oeuf",
       
@@ -629,7 +629,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Abeille.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "abeille pour pizza abeille avec chevre et miel",
         title: "L'Abeille",
         description:"Crème Fraîche, Jambon, Lardons, Oignons, Chèvre, Fromage, Miel",
       
@@ -641,7 +641,7 @@ const MenuData: MenuListInterface[] = [
     },
     {id: uuidv4(),
         imagePath: "/assets/images/Dijonnaise.png",
-        imageAlt: "Des legumes pour la pizza",
+        imageAlt: "cuilliere pour pizza dijonnaise avec moutarde a lancienne et poulet ou thon",
         title: "La Dijonnaise",
         description:"Crème Fraîche, Moutarde à l'ancienne, Thon ou Blanc de Poulet, Pommes de terre, Tomates Fraîches, Fromage, Persil",
       

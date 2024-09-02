@@ -21,7 +21,7 @@ export const EquipeNousData : EquipeNousInterface [] = [
     {
         id:2,
         imagePath:"/assets/images/svg/chef.svg",
-        imageAlt:"",
+        imageAlt:"Avatar de Yoann Boulay ceo de pizza label",
         nom:"Yoann Boulay",
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id turpis justo. Phasellus egestas enim eu quam volutpat, a sollicitudin massa feugiat. Maecenas eu condimentum ante, ut aliquet dui.",
     },

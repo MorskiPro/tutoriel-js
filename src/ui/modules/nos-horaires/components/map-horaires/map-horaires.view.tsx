@@ -18,7 +18,7 @@ interface MapHorairesInterface {
 const MapHorairesData: MapHorairesInterface[] = [
     {
         imagePath:"/assets/images/labsie.png",
-        imageAlt:"",
+        imageAlt:"L'Absie est une commune du Centre-Ouest de la France située dans le département des Deux-Sèvres, en région Nouvelle-Aquitaine.",
         jour:"Mardi",
         description:"Place du 14 juillet",
         ville:"L'Absie",
@@ -26,7 +26,7 @@ const MapHorairesData: MapHorairesInterface[] = [
     },
     {
         imagePath:"/assets/images/lachataigneraie.png",
-        imageAlt:"",
+        imageAlt:"La Châtaigneraie est une commune française située dans le département de la Vendée, en région Pays de la Loire.",
         jour:"Mercredi",
         description:"Place de la république",
         ville:"La Chataigneraie",
@@ -34,7 +34,7 @@ const MapHorairesData: MapHorairesInterface[] = [
     },
     {
         imagePath:"/assets/images/coulonges.png",
-        imageAlt:"",
+        imageAlt:"Coulonges-sur-l'Autize est une commune française, située dans le département des Deux-Sèvres en région Nouvelle-Aquitaine.",
         jour:"Jeudi",
         description:"4 Place du château",
         ville:"Coulonges sur l'Autize",
@@ -42,7 +42,7 @@ const MapHorairesData: MapHorairesInterface[] = [
     },
     {
         imagePath:"/assets/images/champdeniers.png",
-        imageAlt:"",
+        imageAlt:"Champdeniers, précédemment nommée Champdeniers-Saint-Denis entre 1973 et 2018, est une commune française située dans le département des Deux-Sèvres, en région Nouvelle-Aquitaine.",
         jour:"Vendredi",
         description:"Place du champ de foire",
         ville:"Champdeniers",
@@ -50,7 +50,7 @@ const MapHorairesData: MapHorairesInterface[] = [
     },
     {
         imagePath:"/assets/images/secondigny.png",
-        imageAlt:"",
+        imageAlt:"Secondigny est une commune du Centre-Ouest de la France située dans le département des Deux-Sèvres en région Nouvelle-Aquitaine.",
         jour:"Samedi",
         description:"Place du marché",
         ville:"Secondigny",
@@ -63,7 +63,7 @@ export const MapHorairesView = () => {
         
         <div key={uuidv4()} className="flex flex-col flex-grow items-center justify-center bg-white rounded">
             <div className="relative w-[200px] h-[200px] overflow-hidden">
-                <Image fill src={MapHoraires.imagePath} alt="" className="object-scale-down"/>
+                <Image fill src={MapHoraires.imagePath} alt={MapHoraires.imageAlt} className="object-scale-down"/>
             </div>
                 <Typography className="text-center pb-1" variant="caption2">{MapHoraires.jour}</Typography>
                 <Typography className="text-center sm:min-w-48 max-w-38 pb-1" variant="body-sm">{MapHoraires.description}</Typography>

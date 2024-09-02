@@ -9,7 +9,7 @@ export const HistoireNous =() => {
     <Container>
             <div className="sm:flex sm:gap-24">
                 <div className=" sm:flex-none w-[350px] h-[350px] relative sm:mt-10 mx-auto sm:mx-0">
-                        <Image fill src="/assets/images/notrehistoire.png" alt="" className=""/>
+                        <Image fill src="/assets/images/notrehistoire.png" alt="pate a pizza en preparation" className=""/>
                 </div>
                 <div className="sm:flex-auto">
                     <Typography variant="caption4" className="pt-10 sm:pt-28 sm:text-left text-center ">

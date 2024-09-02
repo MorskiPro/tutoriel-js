@@ -18,7 +18,7 @@ interface CTAListInterface{
     {
         id: 123,
         imagePath: "/assets/images/svg/Facebook.svg",
-        imageAlt: "Like Facebook",
+        imageAlt: "Like Facebook Page Label Pizza",
         title: "Rejoins-nous sur Facebook",
         lien: "https://www.facebook.com/p/Label-Pizza-79-100077369687935/?wtsid=rdr_084I3QsGLQ3kGYial&_rdr",
     },

@@ -8,9 +8,10 @@ interface Props {
     url?: string,
     title?: string,
     theme?: string,
+    alt?: string,
 }
 
-export const BackgroundImageContainer = ({url="", title="", theme=""}: Props) => {
+export const BackgroundImageContainer = ({url="", title="", theme="", alt=""}: Props) => {
     return (
         <div 
             className="relative w-full"

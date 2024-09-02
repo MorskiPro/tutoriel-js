@@ -14,7 +14,7 @@ export const EmplacementCamion = () => {
                 {/* Occupation d'une grille pour l'image*/}
                 <div className="flex justify-center col-span-1 h-90">
                     <div className="w-[330px] h-[330px] relative sm:mt-10 mt-5 ">
-                        <Image src="/assets/images/map.png" alt="map designant les emplacements du camiom a pizza dans le 79" fill className=""/>
+                        <Image src="/assets/images/map.png" alt="map designant les emplacements du camion a pizza dans le 79" fill className=""/>
                         </div>
                 </div>
 
