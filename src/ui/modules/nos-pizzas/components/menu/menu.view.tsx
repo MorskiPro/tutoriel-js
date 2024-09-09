@@ -325,6 +325,18 @@ const MenuData: MenuListInterface[] = [
         base: "tomate",
     },
     {id: uuidv4(),
+        imagePath: "/assets/images/Grandbleu.png",
+        imageAlt: "baleine pour pizza grand bleu avec crevettes saumon",
+        title: "La Grand Bleu",
+        description:"Tomate, Moules, Crevettes, Saumon, Fromage, Crème Fraîche, Persil",
+      
+        prices:"S: 9,50€",
+        pricel:"L: 12,50€",
+        pricexl:"XL: 14€",
+
+        base: "tomate",
+    },
+    {id: uuidv4(),
         imagePath: "/assets/images/Reblochonne.png",
         imageAlt: "montagne pour pizza reblochon avec reblochon lardon",
         title: "La Reblochonne",
